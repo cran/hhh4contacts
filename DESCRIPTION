@@ -1,6 +1,6 @@
 Package: hhh4contacts
-Version: 0.13.0
-Date: 2017-06-29
+Version: 0.13.1
+Date: 2020-03-20
 License: GPL-2
 Authors@R: c(person("Sebastian", "Meyer",
                     email = "seb.meyer@fau.de",
@@ -20,11 +20,11 @@ Depends: R (>= 3.2.0), grDevices, graphics, methods, stats, utils,
         surveillance (>= 1.14.0)
 Suggests: MASS, lattice, gridExtra, scales, numDeriv
 LazyData: yes
-RoxygenNote: 6.0.1
+RoxygenNote: 7.1.0
 NeedsCompilation: no
-Packaged: 2017-06-30 17:09:48 UTC; smeyer
+Packaged: 2020-03-20 15:19:46 UTC; smeyer
 Author: Sebastian Meyer [aut, cre],
   Leonhard Held [ctb, ths]
 Maintainer: Sebastian Meyer <seb.meyer@fau.de>
 Repository: CRAN
-Date/Publication: 2017-06-30 17:28:14 UTC
+Date/Publication: 2020-03-20 16:00:03 UTC

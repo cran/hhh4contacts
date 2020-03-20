@@ -197,9 +197,11 @@ noroBE <- function (by = c("districts", "agegroups", "all", "none"),
 }
 
 ##' @rdname noroBE
+##' @format NULL
 "counts"
 
 ##' @rdname noroBE
+##' @format NULL
 "map"
 
 

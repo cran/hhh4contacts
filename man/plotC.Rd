@@ -4,9 +4,16 @@
 \alias{plotC}
 \title{Generate an Image of a Contact Matrix}
 \usage{
-plotC(C, grouping = NULL, xlab = "age group of contact",
-  ylab = "age group of participant", at = 15,
-  col.regions = rev(heat.colors(length(at) - 1)), ..., contour = FALSE)
+plotC(
+  C,
+  grouping = NULL,
+  xlab = "age group of contact",
+  ylab = "age group of participant",
+  at = 15,
+  col.regions = rev(heat.colors(length(at) - 1)),
+  ...,
+  contour = FALSE
+)
 }
 \arguments{
 \item{C}{a square numeric matrix.}

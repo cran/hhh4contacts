@@ -5,8 +5,7 @@
 \alias{stsplothook_highlight}
 \title{Hook functions for \code{stsplot_time1}}
 \usage{
-stsplothook_highlight(christmas = FALSE, epochInYear = NULL, col = 2,
-  lwd = 2)
+stsplothook_highlight(christmas = FALSE, epochInYear = NULL, col = 2, lwd = 2)
 }
 \arguments{
 \item{christmas}{logical indicating if Christmas should be highlighted.}

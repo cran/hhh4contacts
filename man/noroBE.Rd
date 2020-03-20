@@ -6,7 +6,8 @@
 \alias{counts}
 \alias{map}
 \title{Create \code{"sts"} Objects from the Berlin Norovirus Data}
-\format{\describe{
+\format{
+\describe{
 \item{counts:}{an integer-valued array of norovirus surveillance counts
 with labelled dimensions of size
 290 (\code{"week"}) x 12 (\code{"district"}) x 15 (\code{"agegroup"}).}
@@ -17,7 +18,8 @@ The data slot contains the full \code{"NAME"}s of the city districts
 as well as their \code{"POPULATION"}, i.e., \code{rowSums(pop2011)}.}
 }
 The function \code{noroBE()} returns an \code{"\linkS4class{sts}"} object
-generated from these data (and \code{\link{pop2011}}).}
+generated from these data (and \code{\link{pop2011}}).
+}
 \source{
 \describe{
 \item{counts:}{based on norovirus surveillance counts retrieved from
@@ -37,8 +39,12 @@ generated from these data (and \code{\link{pop2011}}).}
 }
 }
 \usage{
-noroBE(by = c("districts", "agegroups", "all", "none"), agegroups = c(1, 2,
-  2, 4, 4, 2), timeRange = c("2011-w27", "2015-w26"), flatten = FALSE)
+noroBE(
+  by = c("districts", "agegroups", "all", "none"),
+  agegroups = c(1, 2, 2, 4, 4, 2),
+  timeRange = c("2011-w27", "2015-w26"),
+  flatten = FALSE
+)
 
 counts
 

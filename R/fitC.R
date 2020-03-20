@@ -1,7 +1,7 @@
 ################################################################################
 ### Profile likelihood inference for the power adjustment of the contact matrix
 ###
-### Copyright (C) 2015-2017 Sebastian Meyer
+### Copyright (C) 2015-2017,2020 Sebastian Meyer
 ###
 ### This file is part of the R package "hhh4contacts",
 ### free software under the terms of the GNU General Public License, version 2,
@@ -89,6 +89,7 @@ fitC <- function (object, C, normalize = TRUE, truncate = TRUE,
     res
 }
 
+##' @importFrom stats logLik
 ##' @export
 logLik.fitC <- function (object, ...)
 {
@@ -97,6 +98,7 @@ logLik.fitC <- function (object, ...)
     val
 }
 
+##' @importFrom stats coef
 ##' @export
 coef.fitC <- function (object, se = FALSE, ...)
 {
@@ -108,7 +110,7 @@ coef.fitC <- function (object, se = FALSE, ...)
     coefs
 }
 
-##' @importFrom stats qnorm
+##' @importFrom stats confint qnorm
 ##' @export
 confint.fitC <- function (object, parm, level = 0.95, ...)
 {
@@ -119,14 +121,13 @@ confint.fitC <- function (object, parm, level = 0.95, ...)
     ci
 }
 
-##' @importFrom stats coef
+##' @importFrom stats coef confint
 ##' @export
 summary.fitC <- function (object, ...)
 {
     ret <- NextMethod("summary")
-    #ret$power <- attr(coef(object, se = TRUE), "power")
     ret$power <- c("Estimate" = attr(coef(object), "power"),
-                   attr(confint.fitC(object), "power"))
+                   attr(confint(object), "power"))
     class(ret) <- c("summary.fitC", class(ret))
     ret
 }
@@ -140,7 +141,7 @@ print.summary.fitC <- function (x, ...)
     invisible(x)
 }
 
-##' @importFrom stats coef
+##' @importFrom stats update coef
 ##' @importFrom utils modifyList
 ##' @importFrom surveillance update.hhh4
 ##' @export

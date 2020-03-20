@@ -1,3 +1,10 @@
+# hhh4contacts 0.13.1 (2020-03-20)
+
+* Maintenance for new S3 method lookup in R 4.0.0.
+  `NextMethod("confint")` in `confint.fitC()` wouldn't find a method if
+  `confint.fitC()` was called directly from `summary.fitC()`.
+
+
 # hhh4contacts 0.13.0 (2017-06-29)
 
 This is the first version published on CRAN. It requires

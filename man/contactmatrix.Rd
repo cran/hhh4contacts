@@ -10,14 +10,16 @@
 \alias{contactmatrix_wallinga}
 \alias{contactmatrix_wallinga_physical}
 \title{POLYMOD Contact Matrices for Germany}
-\format{The dataset \code{contactmatrix_POLYMOD} and its variants are all
+\format{
+The dataset \code{contactmatrix_POLYMOD} and its variants are all
 square numeric matrices with 15 rows (participants) and 15 columns
 (contacts), labelled with the corresponding age groups. There is an attribute
 \code{"agedistri"}, a named numeric vector of length 15, which for the
 \dQuote{_mossong_} and \dQuote{_POLYMOD_} variants gives the
 age distribution of the German POLYMOD sample, and for the \code{_wallinga_}
 variants gives the age distribution of Berlin, i.e.,
-\code{prop.table(colSums(\link{pop2011}))}.}
+\code{prop.table(colSums(\link{pop2011}))}.
+}
 \source{
 \code{contactmatrix_mossong} and \code{contactmatrix_mossong_physical}
 are taken from the Supporting Information in Mossong et al. (2008):
@@ -33,9 +35,12 @@ The reciprocal contact matrices \code{contactmatrix_wallinga} and
 via the method of Wallinga et al. (2006).
 }
 \usage{
-contactmatrix(which = c("corrected", "mossong", "reciprocal"),
-  type = c("all", "physical"), grouping = c(1, 2, 2, 4, 4, 2),
-  normalize = FALSE)
+contactmatrix(
+  which = c("corrected", "mossong", "reciprocal"),
+  type = c("all", "physical"),
+  grouping = c(1, 2, 2, 4, 4, 2),
+  normalize = FALSE
+)
 
 contactmatrix_mossong
 

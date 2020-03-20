@@ -4,8 +4,7 @@
 \alias{fitC}
 \title{Estimate the Power of the Contact Matrix in a \code{"hhh4"} Model}
 \usage{
-fitC(object, C, normalize = TRUE, truncate = TRUE, optim.args = list(),
-  ...)
+fitC(object, C, normalize = TRUE, truncate = TRUE, optim.args = list(), ...)
 }
 \arguments{
 \item{object}{a model fit of class \code{"\link{hhh4}"}.}

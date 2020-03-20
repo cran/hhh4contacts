@@ -150,16 +150,22 @@ contactmatrix <- function (which = c("corrected", "mossong", "reciprocal"),
 }
 
 ##' @rdname contactmatrix
+##' @format NULL
 "contactmatrix_mossong"
 ##' @rdname contactmatrix
+##' @format NULL
 "contactmatrix_mossong_physical"
 ##' @rdname contactmatrix
+##' @format NULL
 "contactmatrix_POLYMOD"
 ##' @rdname contactmatrix
+##' @format NULL
 "contactmatrix_POLYMOD_physical"
 ##' @rdname contactmatrix
+##' @format NULL
 "contactmatrix_wallinga"
 ##' @rdname contactmatrix
+##' @format NULL
 "contactmatrix_wallinga_physical"
 
 

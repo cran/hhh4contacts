@@ -4,10 +4,20 @@
 \alias{plotHHH4_season_groups}
 \title{Plot Seasonality of a \code{hhh4} Fit by Group}
 \usage{
-plotHHH4_season_groups(x, component = "end", seasonStart = 1,
-  conf.level = 0.95, conf.B = 999, col = 1:6, xlab = "time",
-  ylab = "multiplicative effect", ..., refline.args = list(),
-  yearline.args = list(), legend.args = list())
+plotHHH4_season_groups(
+  x,
+  component = "end",
+  seasonStart = 1,
+  conf.level = 0.95,
+  conf.B = 999,
+  col = 1:6,
+  xlab = "time",
+  ylab = "multiplicative effect",
+  ...,
+  refline.args = list(),
+  yearline.args = list(),
+  legend.args = list()
+)
 }
 \arguments{
 \item{x}{an object of class \code{"hhh4"}.}
