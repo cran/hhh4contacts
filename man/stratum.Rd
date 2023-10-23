@@ -26,14 +26,14 @@ Here we only define a method for class \code{"sts"}.
 }
 \section{Methods (by class)}{
 \itemize{
-\item \code{sts}: Extract the names of the units, i.e., the \code{colnames},
+\item \code{stratum(sts)}: Extract the names of the units, i.e., the \code{colnames},
 from a multivariate \code{"sts"} object.
 If the units result from the interaction of multiple strata
 separated by dots, e.g., \code{"region.group"},
 the function can also extract the names corresponding to a specific
 strata dimension, e.g., \code{which = 2} to get the group names.
-}}
 
+}}
 \examples{
 noroBEall <- noroBE(by = "all", flatten = TRUE)
 stratum(noroBEall)  # just colnames(noroBEall)

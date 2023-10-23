@@ -10,14 +10,11 @@ aggregateC(C, grouping, ..., weights = NULL)
 \item{C}{a square numeric contact matrix such as
 \code{\link{contactmatrix_POLYMOD}}.}
 
-\item{grouping}{specification of how to aggregate groups (a named list or
-an integer vector of group sizes) using \code{\link{aggregateC}} with the
-\code{"agedistri"} attribute of the contact matrix as weights.
-If \code{NULL}, the original 5-year intervals are returned.
-The default setting produces the six age groups of Meyer and Held (2017).}
-
-\item{...}{specification of how to aggregate groups (alternative to using a
-named list as the \code{grouping} argument).}
+\item{grouping, ...}{specification of how to aggregate groups.
+\code{grouping} can be a named list of vectors of group labels,
+or an integer vector of sequential group sizes.
+Alternatively, if \code{grouping} is missing, the elements of the list
+representation can be passed directly as further arguments (\code{...}).}
 
 \item{weights}{a named numeric vector containing the weights for the rows of
 \code{C}, typically the age distribution of the participants. The names

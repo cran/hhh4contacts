@@ -27,9 +27,11 @@ the matrices from Table S5 (8.2), and the attached age distribution
 from Table S2 (3.2).
 
 The corrected versions \code{contactmatrix_POLYMOD} and
-\code{contactmatrix_POLYMOD_physical} were constructed from the raw POLYMOD
-data available at
-\url{https://www.researchgate.net/publication/232701632_POLYMOD_contact_survey_for_researchers}.
+\code{contactmatrix_POLYMOD_physical} were constructed
+from the \emph{raw} POLYMOD data initially made available at
+\url{https://www.researchgate.net/publication/232701632_POLYMOD_contact_survey_for_researchers}
+(a reformatted and better documented version is
+nowadays available at \doi{10.5281/zenodo.1043437}).
 The reciprocal contact matrices \code{contactmatrix_wallinga} and
 \code{contactmatrix_wallinga_physical} were estimated from these raw data
 via the method of Wallinga et al. (2006).
@@ -72,10 +74,12 @@ via the method of Wallinga et al. (2006).}
 either \code{"all"} contacts, i.e., count both physical and pure
 conversational contacts, or only \code{"physical"} contacts.}
 
-\item{grouping}{specification of how to aggregate groups (a named list or
-an integer vector of group sizes) using \code{\link{aggregateC}} with the
-\code{"agedistri"} attribute of the contact matrix as weights.
-If \code{NULL}, the original 5-year intervals are returned.
+\item{grouping}{specification of how to aggregate groups using
+\code{\link{aggregateC}}, i.e., a named list of vectors of group labels,
+or an integer vector of sequential group sizes. The \code{"agedistri"}
+attribute of the contact matrix is used as \code{weights}.
+If \code{grouping=NULL}, aggregation is skipped and the original (5-year)
+age groups are returned.
 The default setting produces the six age groups of Meyer and Held (2017).}
 
 \item{normalize}{a logical indicating whether to normalize the matrix

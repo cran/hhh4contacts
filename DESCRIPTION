@@ -1,10 +1,11 @@
 Package: hhh4contacts
-Version: 0.13.1
-Date: 2020-03-20
+Version: 0.13.2
+Date: 2023-10-23
 License: GPL-2
 Authors@R: c(person("Sebastian", "Meyer",
                     email = "seb.meyer@fau.de",
-                    role = c("aut","cre")),
+                    role = c("aut","cre"),
+                    comment = c(ORCID = "0000-0002-1791-9449")),
              person("Leonhard", "Held",
                     email = "Leonhard.Held@uzh.ch",
                     role = c("ctb","ths")))
@@ -18,13 +19,13 @@ Description: Meyer and Held (2017) <doi:10.1093/biostatistics/kxw051> present an
     code to reproduce the results from the paper, see 'demo("hhh4contacts")'.
 Depends: R (>= 3.2.0), grDevices, graphics, methods, stats, utils,
         surveillance (>= 1.14.0)
-Suggests: MASS, lattice, gridExtra, scales, numDeriv
+Suggests: MASS, lattice, gridExtra
 LazyData: yes
-RoxygenNote: 7.1.0
+RoxygenNote: 7.2.3
 NeedsCompilation: no
-Packaged: 2020-03-20 15:19:46 UTC; smeyer
-Author: Sebastian Meyer [aut, cre],
+Packaged: 2023-10-23 12:05:27 UTC; smeyer
+Author: Sebastian Meyer [aut, cre] (<https://orcid.org/0000-0002-1791-9449>),
   Leonhard Held [ctb, ths]
 Maintainer: Sebastian Meyer <seb.meyer@fau.de>
 Repository: CRAN
-Date/Publication: 2020-03-20 16:00:03 UTC
+Date/Publication: 2023-10-23 12:30:02 UTC

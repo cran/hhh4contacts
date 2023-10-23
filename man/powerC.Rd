@@ -31,7 +31,7 @@ defined via the eigendecomposition of \code{C} as
 Cnorm <- contactmatrix(normalize = TRUE)
 powerC <- make_powerC(Cnorm)
 powerC(1)
-powerC(0)
+zapsmall(powerC(0))
 powers <- c(0, 0.5, 1, 2)
 Cp <- lapply(powers, powerC)
 if (require("gridExtra"))

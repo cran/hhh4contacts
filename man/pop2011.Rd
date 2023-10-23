@@ -26,7 +26,8 @@ popDE
 \source{
   \describe{
     \item{pop2011:}{numbers extracted from
-      \url{https://www.statistik-berlin-brandenburg.de/webapi/opendatabase?id=BevBBBE}
+      \url{https://www.statistik-berlin-brandenburg.de/}
+      (originally: \file{webapi/opendatabase?id=BevBBBE})
       as of 2011-12-31 (before census), published by
       \emph{Amt fuer Statistik Berlin-Brandenburg}
       (Statistical Office of Berlin-Brandenburg)

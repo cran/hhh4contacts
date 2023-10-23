@@ -1,3 +1,8 @@
+# hhh4contacts 0.13.2 (2023-10-23)
+
+* Minor documentation improvements and updates.
+
+
 # hhh4contacts 0.13.1 (2020-03-20)
 
 * Maintenance for new S3 method lookup in R 4.0.0.

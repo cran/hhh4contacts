@@ -138,7 +138,7 @@ meanHHH_groups <- function (x, groups, decomposed = FALSE)
 ##' @return a matrix of the plotted point estimates of the multiplicative
 ##'     seasonal effect by group.
 ##' @importFrom graphics matplot matlines
-##' @importFrom grDevices rgb col2rgb
+##' @importFrom grDevices rgb col2rgb adjustcolor
 ##' @importFrom stats quantile
 ##' @importFrom utils modifyList
 ##' @export
@@ -174,7 +174,7 @@ plotHHH4_season_groups <- function (x, component = "end", seasonStart = 1,
         col <- rep_len(col, dim(season2plot)[2L])
         if (is.na(conf.level)) { # plot individual samples
             matplot(x = seasonx, y = matrix(season2plot, nrow = freq),
-                    type = "l", lty = 1, col = scales::alpha(col, alpha = 0.1),
+                    type = "l", lty = 1, col = adjustcolor(col, alpha.f = 0.1),
                     xlab = xlab, ylab = ylab, ...)
             darken <- function (col, f = 0.5)
                 apply(col2rgb(col)/255*f, 2L, function (x) rgb(x[1L], x[2L], x[3L]))

@@ -73,8 +73,8 @@
 ##'   (Statistical Office of Berlin-Brandenburg)
 ##'   under the \sQuote{CC BY 3.0 DE} license
 ##'   (\url{https://creativecommons.org/licenses/by/3.0/de/}).
-##'   The \code{map} included here is a \code{\link[rgeos]{gUnaryUnion}}
-##'   of these local centres by city district.}
+##'   The \code{map} included here aggregates
+##'   these local centres by city district.}
 ##' }
 ##' @author Sebastian Meyer
 ##' @references
