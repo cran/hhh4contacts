@@ -202,6 +202,10 @@ noroBE <- function (by = c("districts", "agegroups", "all", "none"),
 
 ##' @rdname noroBE
 ##' @format NULL
+##' @rawNamespace
+##' ## 'map' uses external S4 class: force 'sp' (see WRE 1.1.6)
+##' importClassesFrom(sp, SpatialPolygonsDataFrame)  # anything
+##'
 "map"
 
 

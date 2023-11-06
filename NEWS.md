@@ -1,3 +1,9 @@
+# hhh4contacts 0.13.3 (2023-11-06)
+
+* The package now formally depends on **sp** (S4 class used by `map`
+  data), not only implicitly via **surveillance**.
+
+
 # hhh4contacts 0.13.2 (2023-10-23)
 
 * Minor documentation improvements and updates.
