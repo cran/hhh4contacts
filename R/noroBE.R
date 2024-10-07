@@ -10,7 +10,7 @@
 
 ##' Create \code{"sts"} Objects from the Berlin Norovirus Data
 ##'
-##' The function \code{noroBE()} creates an \code{"\linkS4class{sts}"} object
+##' The function \code{noroBE()} creates an \code{"\link[surveillance:sts-class]{sts}"} object
 ##' based on the array of norovirus surveillance \code{counts}, the \code{map}
 ##' of Berlin's city district, and the \code{\link{pop2011}} data stored in the
 ##' package. This is the data analysed by Meyer and Held (2017).
@@ -20,7 +20,7 @@
 ##' \item{"districts":}{aggregates \code{counts} and \code{pop2011} over the
 ##'     age groups and stores the matrix of adjacency orders from the \code{map}
 ##'     in the \code{neighbourhood} slot. The latter is obtained via
-##'     \code{\link{nbOrder}(\link{poly2adjmat}(map), maxlag = 5)}.}
+##'     \code{\link[surveillance]{nbOrder}(\link[surveillance]{poly2adjmat}(map), maxlag = 5)}.}
 ##' \item{"agegroups":}{aggregates \code{counts} and \code{pop2011} over the
 ##'     districts and stores the \code{\link{contactmatrix}()} in the
 ##'     \code{neighbourhood} slot, potentially also combining some age groups
@@ -58,7 +58,7 @@
 ##' The data slot contains the full \code{"NAME"}s of the city districts
 ##' as well as their \code{"POPULATION"}, i.e., \code{rowSums(pop2011)}.}
 ##' }
-##' The function \code{noroBE()} returns an \code{"\linkS4class{sts}"} object
+##' The function \code{noroBE()} returns an \code{"\link[surveillance:sts-class]{sts}"} object
 ##' generated from these data (and \code{\link{pop2011}}).
 ##' @source \describe{
 ##' \item{counts:}{based on norovirus surveillance counts retrieved from

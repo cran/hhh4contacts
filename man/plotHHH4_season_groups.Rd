@@ -25,7 +25,7 @@ plotHHH4_season_groups(
 \item{component}{character string indicating from which component
 seasonality terms should be extracted.}
 
-\item{seasonStart}{an integer defining the \code{\link{epochInYear}} that
+\item{seasonStart}{an integer defining the \code{\link[surveillance]{epochInYear}} that
 starts a new season (by default the first).}
 
 \item{conf.level, conf.B}{a confidence level for the pointwise confidence
@@ -60,5 +60,5 @@ a matrix of the plotted point estimates of the multiplicative
 }
 \description{
 A plot method for models with group-specific seasonality terms that are not
-handled correctly by \code{\link{plotHHH4_season}}.
+handled correctly by \code{\link[surveillance]{plotHHH4_season}}.
 }

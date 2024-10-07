@@ -8,8 +8,8 @@ addGroups2WFUN(WFUN, groups, initial = rep.int(WFUN$initial, nlevels(groups)))
 }
 \arguments{
 \item{WFUN}{a list specification of parametric weights, e.g.,
-as returned by the constructor functions \code{\link{W_powerlaw}} and
-\code{\link{W_np}}.}
+as returned by the constructor functions \code{\link[surveillance]{W_powerlaw}} and
+\code{\link[surveillance]{W_np}}.}
 
 \item{groups}{a vector of length \code{nUnits} determining to which
 group each unit belongs to. The supplied vector is converted to a

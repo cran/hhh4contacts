@@ -15,7 +15,7 @@ stsplothook_highlight(christmas = FALSE, epochInYear = NULL, col = 2, lwd = 2)
 \item{col, lwd}{graphical parameters for the highlighting lines.}
 }
 \description{
-Hook functions can be passed to \code{\link{stsplot_time1}},
+Hook functions can be passed to \code{\link[surveillance]{stsplot_time1}},
 which are evaluated after all the plotting has been done,
 and with the hook function environment set to the evaluation environment
 of \code{stsplot_time1} such that local variables can be accessed.

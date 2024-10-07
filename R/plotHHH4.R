@@ -11,14 +11,14 @@
 ##' Plot Mean Components of a \code{hhh4} Fit by Group
 ##'
 ##' Fitted mean components for age-structured, areal time series
-##' \code{\link{hhh4}} models can be aggregated over districts or age groups.
+##' \code{\link[surveillance]{hhh4}} models can be aggregated over districts or age groups.
 ##' @param x an object of class \code{"hhh4"}.
 ##' @param groups a factor of grouping the units in the model, i.e., it must be
 ##' of length \code{x$nUnit}. There will be one plot for each factor level.
 ##' @param total a logical indicating if the group-wise mean components should
 ##' be subsequently summed up over all \code{groups} for an overall plot.
-##' @param decompose,... see \code{\link{plotHHH4_fitted}}.
-##' @return see \code{\link{plotHHH4_fitted}}.
+##' @param decompose,... see \code{\link[surveillance]{plotHHH4_fitted}}.
+##' @return see \code{\link[surveillance]{plotHHH4_fitted}}.
 ##' @importFrom surveillance plotHHH4_fitted
 ##' @export
 
@@ -53,14 +53,14 @@ plotHHH4_fitted_groups <- function (x, groups, total = FALSE,
 
 ##' Plot Mean Components of a \code{hhh4} Fit by District Averaged Over Time
 ##'
-##' This is a wrapper for \code{\link{plotHHH4_maps}} with prior aggregation
+##' This is a wrapper for \code{\link[surveillance]{plotHHH4_maps}} with prior aggregation
 ##' over different (age) groups.
 ##' @param x an object of class \code{"hhh4"}.
 ##' @param map an object inheriting from \code{"SpatialPolygons"}.
 ##' @param districts a factor of length \code{x$nUnit} with as many levels as
 ##'     there are districts and names according to \code{row.names(map)}.
-##' @param ... arguments passed to \code{\link{plotHHH4_maps}}.
-##' @return see \code{\link{plotHHH4_maps}}
+##' @param ... arguments passed to \code{\link[surveillance]{plotHHH4_maps}}.
+##' @return see \code{\link[surveillance]{plotHHH4_maps}}
 ##' @importFrom surveillance plotHHH4_maps
 ##' @export
 plotHHH4_maps_groups <- function (x, map, districts, ...)
@@ -109,11 +109,11 @@ meanHHH_groups <- function (x, groups, decomposed = FALSE)
 ##' Plot Seasonality of a \code{hhh4} Fit by Group
 ##'
 ##' A plot method for models with group-specific seasonality terms that are not
-##' handled correctly by \code{\link{plotHHH4_season}}.
+##' handled correctly by \code{\link[surveillance]{plotHHH4_season}}.
 ##' @param x an object of class \code{"hhh4"}.
 ##' @param component character string indicating from which component
 ##'     seasonality terms should be extracted.
-##' @param seasonStart an integer defining the \code{\link{epochInYear}} that
+##' @param seasonStart an integer defining the \code{\link[surveillance]{epochInYear}} that
 ##'     starts a new season (by default the first).
 ##' @param conf.level,conf.B a confidence level for the pointwise confidence
 ##'     intervals around the group-specific seasonal effects. The confidence

@@ -14,12 +14,12 @@ plotHHH4_maps_groups(x, map, districts, ...)
 \item{districts}{a factor of length \code{x$nUnit} with as many levels as
 there are districts and names according to \code{row.names(map)}.}
 
-\item{...}{arguments passed to \code{\link{plotHHH4_maps}}.}
+\item{...}{arguments passed to \code{\link[surveillance]{plotHHH4_maps}}.}
 }
 \value{
-see \code{\link{plotHHH4_maps}}
+see \code{\link[surveillance]{plotHHH4_maps}}
 }
 \description{
-This is a wrapper for \code{\link{plotHHH4_maps}} with prior aggregation
+This is a wrapper for \code{\link[surveillance]{plotHHH4_maps}} with prior aggregation
 over different (age) groups.
 }

@@ -1,3 +1,9 @@
+# hhh4contacts 0.13.4 (2024-10-07)
+
+* The source code is now hosted in a public Git repository at
+  <https://codeberg.org/EE-hub/hhh4contacts>.
+
+
 # hhh4contacts 0.13.3 (2023-11-06)
 
 * The package now formally depends on **sp** (S4 class used by `map`

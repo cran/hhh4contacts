@@ -15,12 +15,12 @@ of length \code{x$nUnit}. There will be one plot for each factor level.}
 \item{total}{a logical indicating if the group-wise mean components should
 be subsequently summed up over all \code{groups} for an overall plot.}
 
-\item{decompose, ...}{see \code{\link{plotHHH4_fitted}}.}
+\item{decompose, ...}{see \code{\link[surveillance]{plotHHH4_fitted}}.}
 }
 \value{
-see \code{\link{plotHHH4_fitted}}.
+see \code{\link[surveillance]{plotHHH4_fitted}}.
 }
 \description{
 Fitted mean components for age-structured, areal time series
-\code{\link{hhh4}} models can be aggregated over districts or age groups.
+\code{\link[surveillance]{hhh4}} models can be aggregated over districts or age groups.
 }
